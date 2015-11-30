@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE> Post New Topic </TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-874">
+<META NAME="Generator" CONTENT="EditPlus">
+<META NAME="Author" CONTENT="">
+<META NAME="Keywords" CONTENT="">
+<META NAME="Description" CONTENT="">
+</HEAD>
+
+<link rel=stylesheet href="scroll.css" type="text/css">
+<style>
+.input {
+	font: 15px ms sans serif;
+	color: #FF3D86;
+	font-family : ms sans serif;
+	font-size :2;
+	width : 350;
+	background: #ffffff;
+	border: 1 solid #FF3D86;
+}
+body {
+	background-color: #FFFFFF;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.unnamed1 {
+	font-size: 8pt;
+}
+.style4 {
+	font-size: xx-small;
+	color: #3399FF;
+}
+.style8 {color: #FF3D86; font-weight: bold; }
+</style>
+
+<BODY>
+
+<form method=post action="webboard.php?action=add" name="boardform" enctype="multipart/form-data">
+
+<center>
+  <img src="../brdhead_pink.gif" width="1018" height="200">  <br>
+  <table width="458" border="0" cellspacing="1" cellpadding="0">
+  <tr>
+    <td width="20" valign="middle" class="unnamed1">&nbsp;</td>
+    <td colspan="3" valign="bottom" bgcolor="#FFFFFF"><div align="center"><span class="unnamed1"><span class="style8"><font face="Verdana">Topic</font></span></span></div></td>
+    <td width="20" valign="middle" class="unnamed1">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td valign="middle" class="unnamed1"><div align="center"><span class="style4"><font face="Verdana"> </font></span></div></td>
+    <td colspan="3"><div align="center">
+      <input type="text" name="topic" class=input>
+    </div></td>
+    <td valign="middle" class="unnamed1"><div align="center"><span class="style4"><font face="Verdana"> </font></span></div></td>
+  </tr>
+  <tr>
+    <td valign="middle" class="unnamed1">&nbsp;</td>
+    <td width="196" valign="bottom" bgcolor="#FFFFFF"><div align="center"><span class="unnamed1"><span class="style8"><font face="Verdana">Name</font></span></span></div></td>
+    <td width="22" valign="middle" class="unnamed1">&nbsp;</td>
+    <td width="194" valign="bottom" bgcolor="#FFFFFF"><div align="center"><span class="unnamed1"><span class="style8"><font face="Verdana">E-mail</font></span></span></div></td>
+    <td valign="middle" class="unnamed1">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td valign="middle" class="unnamed1"><div align="center"><span class="style4"><font face="Verdana"> </font></span></div></td>
+    <td valign="top"><div align="center">
+      <input type="text"  style="width:150"name="name" class=input>
+    </div></td>
+    <td valign="middle" class="unnamed1">&nbsp;</td>
+    <td valign="top"><div align="center">
+        <input type="text" style="width:150" name="email" class=input>
+    </div></td>
+    <td valign="middle" class="unnamed1"><div align="center"><span class="style4"><font face="Verdana"> </font></span></div></td>
+  </tr>
+  <tr>
+    <td valign="middle" class="unnamed1">&nbsp;</td>
+    <td colspan="3" valign="bottom" bgcolor="#FFFFFF"><div align="center"><span class="unnamed1"><span class="style8"><font face="Verdana">Picture</font></span></span></div></td>
+    <td valign="middle" class="unnamed1">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td valign="middle" class="unnamed1"><div align="center"><span class="style4"><font face="Verdana"> </font></span></div></td>
+    <td colspan="3">
+      <div align="center">
+        <input type="file" name="picture" class=input>
+      </div></td>
+    <td valign="middle" class="unnamed1"><div align="center"><span class="style4"><font face="Verdana"> </font></span></div></td>
+  </tr>
+  <tr>
+    <td valign="middle" class="unnamed1">&nbsp;</td>
+    <td colspan="3" valign="bottom" bgcolor="#FFFFFF"><div align="center"><span class="unnamed1"><span class="style8"><font face="Verdana">Message</font></span></span></div></td>
+    <td valign="middle" class="unnamed1">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td valign="middle" class="unnamed1"><div align="center"><span class="style4"><font face="Verdana"> </font></span></div></td>
+    <td colspan="3"><div align="center">
+      <textarea name="comment" rows="7" class="input"></textarea>
+    </div></td>
+    <td valign="middle" class="unnamed1"><div align="center"><span class="style4"><font face="Verdana"> </font></span></div></td>
+  </tr>
+  <tr>
+	  <td><div align="center"></div></td>
+
+      <td colspan="3"><div align="center"><img src="post.gif" width="85" height="18" onClick="if(checkclick==0){var chcknum=0; if(topic.value ==''){chcknum++;}if(boardform.name.value ==''){chcknum++;} if(comment.value==''){chcknum++;}if(chcknum == 0){checkclick++;boardform.submit();}else{alert('คุณกรอกข้อมูลไม่ครบครับ');checkclick=0;} }">&nbsp;<img src="clear.gif" width="85" height="18" onclick="boardform.reset()"></div></td>
+      <td>&nbsp;</td>
+      <SCRIPT LANGUAGE="JavaScript">
+<!--
+	var checkclick = 0;
+//-->
+</SCRIPT>
+	  </tr>
+</table>
+</center></form>
+</BODY>
+</HTML>

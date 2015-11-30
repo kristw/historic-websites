@@ -1,0 +1,91 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE> New Document </TITLE>
+<META NAME="Generator" CONTENT="EditPlus">
+<META NAME="Author" CONTENT="">
+<META NAME="Keywords" CONTENT="">
+<META NAME="Description" CONTENT="">
+</HEAD>
+
+<script language=javascript>
+function getthemonth(num)
+{var month;
+switch(num)
+{
+case 0:
+	month="Jan";
+	break;
+case 1:
+	month="Feb";
+	break;
+case 2:
+	month="Mar";
+	break;
+case 3:
+	month="Apr";
+	break;
+case 4:
+	month="May";
+	break;
+case 5:
+	month="Jun";
+	break;
+case 6:
+	month="Jul";
+	break;
+case 7:
+	month="Aug";
+	break;
+case 8:
+	month="Sep";
+	break;
+case 9:
+	month="Oct";
+	break;
+case 10:
+	month="Nov";
+	break;
+case 11:
+	month="Dec";
+	break;
+default:
+	month="Invalid month";
+	}
+	return month;
+}
+
+function mesg1(){
+window.status=":::::::: >> Welcome to Southern Seabra";
+}
+function mblank(){
+window.status="";
+}
+var sdate = new Date();
+var thedate = sdate.getDate();
+var themonth = getthemonth(sdate.getMonth());
+var theyear = sdate.getFullYear();
+var realdate5 = thedate +"/" +themonth+"/"+theyear;
+function showdate(){
+window.status=":::::::: >> Today "+realdate5+"";
+}
+
+
+function statrun(){
+window.setTimeout("mesg1()",100);
+window.setTimeout("mblank()",100+1200);
+window.setTimeout("showdate()",100+1300);
+window.setTimeout("statrun()",100+4000);
+}
+
+
+</script>
+
+<style>
+body {background-position=right-top}
+</style>
+
+<BODY BGCOLOR="#FFFFFF" background="menu/bottom.jpg" onload="statrun();">
+
+</BODY>
+</HTML>

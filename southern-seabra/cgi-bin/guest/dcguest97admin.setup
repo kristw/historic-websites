@@ -1,0 +1,119 @@
+# dcguest98admin.setup
+# Setup file for dcguest98admin Script
+# NOTE: YOU STILL NEED TO INCLUDE DCGuest97.SETUP FILE
+# 
+# Written By David S. Choi, dc@sitedeveloper.com
+# 5 Feb 1998
+#
+##########  YOU MUST KEEP THIS COPYRIGHTS NOTICE INTACT ###############
+# Copyright  ©1997 DCScripts All Rights Reserved
+# As part of the installation process, you will be asked
+# to accept the terms of this Agreement. This Agreement is
+# a legal contract, which specifies the terms of the license
+# and warranty limitation between you and DCScripts and DCGuest97.
+# You should carefully read the following terms and conditions before
+# installing or using this software.  Unless you have a different license
+# agreement obtained from DCScripts, installation or use of this software
+# indicates your acceptance of the license and warranty limitation terms
+# contained in this Agreement. If you do not agree to the terms of this
+# Agreement, promptly delete and destroy all copies of the Software.
+#
+# Versions of the Software 
+# You may install as many copies of DCGuest97 Script.
+# 
+# License to Redistribute
+# Distributing the software and/or documentation with other products
+# (commercial or otherwise) or by other than electronic means without
+# DCScripts's prior written permission is forbidden.
+# All rights to the DCGUEST97 software and documentation not expressly
+# granted under this Agreement are reserved to DCScripts.
+#
+# Disclaimer of Warranty
+# THIS SOFTWARE AND ACCOMPANYING DOCUMENTATION ARE PROVIDED "AS IS" AND
+# WITHOUT WARRANTIES AS TO PERFORMANCE OF MERCHANTABILITY OR ANY OTHER
+# WARRANTIES WHETHER EXPRESSED OR IMPLIED.   BECAUSE OF THE VARIOUS HARDWARE
+# AND SOFTWARE ENVIRONMENTS INTO WHICH HKDBOARD MAY BE USED, NO WARRANTY OF
+# FITNESS FOR A PARTICULAR PURPOSE IS OFFERED.  THE USER MUST ASSUME THE
+# ENTIRE RISK OF USING THIS PROGRAM.  ANY LIABILITY OF DCSCRIPTS WILL BE
+# LIMITED EXCLUSIVELY TO PRODUCT REPLACEMENT OR REFUND OF PURCHASE PRICE.
+# IN NO CASE SHALL DCSCRIPTS BE LIABLE FOR ANY INCIDENTAL, SPECIAL OR
+# CONSEQUENTIAL DAMAGES OR LOSS, INCLUDING, WITHOUT LIMITATION, LOST PROFITS
+# OR THE INABILITY TO USE EQUIPMENT OR ACCESS DATA, WHETHER SUCH DAMAGES ARE
+# BASED UPON A BREACH OF EXPRESS OR IMPLIED WARRANTIES, BREACH OF CONTRACT,
+# NEGLIGENCE, STRICT TORT, OR ANY OTHER LEGAL THEORY. THIS IS TRUE EVEN IF
+# DCSCRIPTS IS ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. IN NO CASE WILL
+# DCSCRIPT'S LIABILITY EXCEED THE AMOUNT OF THE LICENSE FEE ACTUALLY PAID
+# BY LICENSEE TO DCSCRIPTS.
+#
+###########################################################################
+
+# Make sure DCGuest97.setup file is included in the main program
+# BEFORE this file is included
+# You shouldn't have to edit anything in thie file
+# Define main url
+
+$adminurl = "$scripturl/dcguest97admin.cgi";
+
+# NOTE:
+# change password.txt to some name that no one will guess...
+# This file holds your username and password
+#
+
+$password_file = "$datadir/password.txt";
+
+# Main Logon Page header and sub header
+
+$display_logon_header = "Admin";
+$display_logon_sub_header = "";
+$display_logon_sub_header .= qq~
+[ <a href="$dcscript">DCGuest97</a> ]
+[ <a href="$adminurl">Main Page</a> ]
+<p>
+Enter Username and Password to Log On.
+~;
+
+# Main Page
+
+$display_main_header = "Admin";
+$display_main_sub_header = "";
+$display_main_sub_header .= qq~
+[ <a href="$dcscript">DCGuest97</a> ]
+[ <a href="$adminurl">Main Page</a> ]
+<p>
+Choose either to remove links or edit existing one.
+~;
+
+# Remove page
+
+$display_remove_header = "Admin";
+$display_remove_sub_header = "";
+$display_remove_sub_header .= qq~
+[ <a href="$dcscript">DCGuest97</a> ]
+[ <a href="$adminurl">Main Page</a> ]
+<p>
+Select Links to Remove from the database
+~;
+
+# Remove done page
+
+$display_removedone_header = "Admin";
+$display_removedone_sub_header == "";
+$display_removedone_sub_header .= qq~
+[ <a href="$dcscript">DCGuest97</a> ]
+[ <a href="$adminurl">Main Page</a> ]
+<p>
+Following Links were Removed from the list
+~;
+
+
+# Change password Done page
+
+$display_change_header = "Admin";
+$display_change_sub_header = "";
+$display_change_sub_header .= qq~
+[ <a href="$dcscript">DCGuest97</a> ]
+[ <a href="$adminurl">Main Page</a> ]
+<p>
+Your Username and password has been updated<br>
+Please now logon to proceed.
+~;

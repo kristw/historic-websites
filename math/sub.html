@@ -1,0 +1,149 @@
+<html>
+<head>
+
+
+ <style type="text/css">
+<!--
+A:link, A:visited { text-decoration: none; color:#0066ff}
+A:hover { text-decoration: none; color : #0088ff}
+body{scrollbar-face-color:       white ; 
+       scrollbar-shadow-color:     white ;
+       scrollbar-highlight-color:  white ; 
+       scrollbar-3dlight-color:    white ;
+       scrollbar-darkshadow-color: white ; 
+       scrollbar-track-color:      white ; 
+       scrollbar-arrow-color:      black }
+.input {  
+	BORDER-BOTTOM: black solid thin;
+    BORDER-LEFT: black solid thin;
+    BORDER-RIGHT:black solid thin;
+    BORDER-TOP: black solid thin;
+	BORDER-WIDTH : 1;
+    }
+.button {  
+	BORDER-BOTTOM: black solid thin;
+    BORDER-LEFT: black solid thin;
+    BORDER-RIGHT:black solid thin;
+    BORDER-TOP: black solid thin;
+	BORDER-WIDTH : 1;
+	background : white;
+	font-family : verdana;
+	font-size : 8pt;
+	width : 65
+    }
+-->
+</style>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-874">
+</head>
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#FF0000" alink="#999999">
+<dir> </dir>
+<p><font face="MS Sans Serif" size="2"><u>สับเซต</u> (Subset)<br>
+  <br>
+  1. เซตว่างเป็นสับเซตของทุกเซต<br>
+  2. </font><font face="MS Sans Serif" size="2">เซต A เป็นสับเซตของ B ก็ต่อเมื่อ 
+  สมาชิกทุกตัวของ A เป็นสมาชิกของ B </font><font size="2" face="MS Sans Serif">&#9;เขียนแทนด้วยสัญลักษณ์ 
+  “ <font color="#0066ff">A <font face="Symbol">&#204;</font> B</font> ” แทน A 
+  เป็นสับเซตของ B</font><br>
+  <font face="MS Sans Serif" size="2">3. เซต B ไม่เป็นสับเซตของ B ก็ต่อเมื่อ มีสมาชิก 
+  A อย่างน้อยหนึ่งตัวที่ไม่เป็นสมาชิกของ B</font><font size="2" face="MS Sans Serif">&#9;ถ้า 
+  A ไม่เป็นสับเซตของ B แทนด้วย “<font color="#0066ff"> A <font face="Symbol">&#203;</font> 
+  B</font> ”</font><font face="Angsana New" size=4><font face="MS Sans Serif" size="2"><br>
+  4. เซตทุกเซตเป็นสับเซตของตัวมันเอง</font></font></p>
+<p> <font size="2" face="MS Sans Serif">&#9;<u>ตัวอย่าง<br>
+  <br>
+  </u> &#9;กำหนด A = { 1, 2, 3} <br>มี n(A) <br>
+  <textarea name="textfield" cols="58" class=input rows=1></textarea>
+  <font face="verdana" style="font-size: 8pt"><a onClick="textfield.value=' 3';" style="cursor:hand"><b>Answer</b></a> 
+  | <a onClick="textfield.value=''" style="cursor:hand"><b>Clear</b></a></font> 
+  </font><font size="2" face="MS Sans Serif">&#9;&#9;<br>
+  สับเซตของ A คือ <br>
+<textarea name="textfield2" cols="58" class=input rows=1></textarea>
+  <font face="verdana" style="font-size: 8pt"><a onClick="textfield2.value=' เซตว่าง , {1} , {2} , {3} , {1, 2} , {1, 3} , {2, 3} , {1, 2, 3}';" style="cursor:hand"><b>Answer</b></a> 
+  | <a onClick="textfield2.value=''" style="cursor:hand"><b>Clear</b></a></font> <br>
+  <font size="2" face="MS Sans Serif">&#9;&#9;จำนวนสับเซตทั้งหมดของ A  <br>
+<textarea name="textfield3" cols="58" class=input rows=1></textarea>
+  <font face="verdana" style="font-size: 8pt"><a onClick="textfield3.value=' 8';" style="cursor:hand"><b>Answer</b></a> 
+  | <a onClick="textfield3.value=''" style="cursor:hand"><b>Clear</b></a></font> <br>
+
+
+
+
+
+
+</font><br>
+  <br>
+  <font face="MS Sans Serif" size="2"><u>ตัวอย่าง</u>&#9;<br><br>
+  กำหนด A = { 1, 3, 5} &#9; B = { 2, 3, 5} &#9;C = { 1, 3, 5, 7} &#9;D = { 2, 
+  3, 5, 9} <br>
+  </font><font size="2" face="MS Sans Serif">&#9;&#9;&#9;จงพิจารณาว่าเซตใดเป็นสับเซตของเซตใด</font>
+<textarea name="textfield4" cols="58" class=input rows=2></textarea>
+  <font face="verdana" style="font-size: 8pt"><a onClick="textfield4.value=' A เป็น subset ของ C \n B เป็น subset ของ D';" style="cursor:hand"><b>Answer</b></a> 
+  | <a onClick="textfield4.value=''" style="cursor:hand"><b>Clear</b></a></font> <br>
+
+
+
+
+
+<p><font face="MS Sans Serif" size="2"><b>สับเซตแท้</b></font></p>
+<p><font face="MS Sans Serif" size="2"><u>นิยาม</u> กำหนด A และ B เป็นเซต</font></p>
+<li><font face="MS Sans Serif" size="2">A เป็นสับเซต<font color="#0066ff">แท้</font>ของ 
+    B ก็ต่อเมื่อ <font color="#0066ff">A <font face="Symbol">&#204;</font> B และ 
+    A <font face="Symbol">&#185;</font> B</font></font></li>
+  <li><font face="MS Sans Serif" size="2">A เป็นสับเซต<font color="#0066ff">ไม่แท้</font>ของ 
+    B ก็ต่อเมื่อ <font color="#0066ff">A <font face="Symbol">&#204;</font> B และ 
+    A = B</font></font></li>
+<br><br>
+ <font face="MS Sans Serif" size="2"><u>ตัวอย่าง</u>&#9;<br>
+  <br>
+  A = { a, b} จงหาสับเซตแท้ และสับเซตไม่แท้</font>
+  <br>
+<font face="MS Sans Serif" size="2">&#9;&#9;&#9;สับเซตแท้ : <br>
+<textarea name="textfield5" cols="58" class=input rows=1></textarea>
+  <font face="verdana" style="font-size: 8pt"><a onClick="textfield5.value=' {a} , {b} , เซตว่าง';" style="cursor:hand"><b>Answer</b></a> 
+  | <a onClick="textfield5.value=''" style="cursor:hand"><b>Clear</b></a></font> <br>
+
+<font size="2" face="MS Sans Serif">&#9;&#9;&#9;สับเซตไม่แท้ : <br>
+<textarea name="textfield6" cols="58" class=input rows=1></textarea>
+  <font face="verdana" style="font-size: 8pt"><a onClick="textfield6.value=' {a , b}';" style="cursor:hand"><b>Answer</b></a> 
+  | <a onClick="textfield6.value=''" style="cursor:hand"><b>Clear</b></a></font> <br>
+
+  <br>
+  </font><p></p>
+
+
+
+
+
+
+
+
+<p><font face="MS Sans Serif" size="2"><b>สมบัติของสับเซต</b> <br>
+  <br>
+  ให้ A, B, C เป็นเซตใด ๆ </font></p>
+<p><font face="MS Sans Serif" size="2">1. </font><font face="Symbol" size="2" color="#0066ff">&#198;</font> 
+  <font face="MS Sans Serif" size="2" color="#0066ff"> <font face="Symbol">&#204;</font> 
+  A</font><font face="MS Sans Serif" size="2"> (เซตว่างเป็นสับเซตของทุก ๆ เซต)<br>
+  </font><font face="Angsana New" size=4><font face="MS Sans Serif" size="2">2. 
+  <font color="#0066ff">A <font face="Symbol">&#204;</font> A</font> (เซตทุกเซตเป็นสับเซตของตัวมันเอง)<br>
+  3.<font color="#000000"> ถ้า A <font face="Symbol">&#204;</font> B และ B <font face="Symbol">&#204;</font> 
+  A แล้ว A = B<br>
+  </font></font></font><font face="Angsana New" size="4" color="#000000"><font face="MS Sans Serif" size="2">4. 
+  ถ้า A และ B เป็นเซตจำกัด และ A <font face="Symbol">&#204;</font> B แล้ว n(A) 
+  <font face="Symbol">&#163;</font> n(B)</font></font><font face="Angsana New" size=4><font face="MS Sans Serif" size="2"><br>
+  5. เมื่อ A เป็นเซตจำกัด จะได้ว่า<font color="#0066ff">จำนวนสับเซตทั้งหมดของ 
+  A = 2<sup>n</sup></font> เมื่อ n เป็นสมาชิกทั้งหมด<br>
+  6. เมื่อ A เป็นเซตจำกัด <font color="#0066ff">จำนวนสับเซตแท้ของ A = 2<sup>n</sup> 
+  - 1</font> เซต เมื่อ n เป็นสมาชิกทั้งหมด</font></font></p>
+<font face="Angsana New" size=4> 
+<p><font face="MS Sans Serif" size="2"><br>
+  <b>การหาจำนวนสับเซต</b></font></p>
+</font><font face="Angsana New" size=4> 
+<font face="MS Sans Serif" size="2">ถ้า A มี จำนวนสมาชิก n ตัว แล้ว</font><BR>
+<font face="MS Sans Serif" size="2">จำนวนสับเซตที่มีสมาชิก 1 ตัว = n เซต</font><br>
+<font face="MS Sans Serif" size="2">จำนวนสับเซตที่มีสมาชิก 2 ตัว = n(n-1) &#247; (2&#183;1)  เซต</font><br>
+<font face="MS Sans Serif" size="2">จำนวนสับเซตที่มีสมาชิก 3 ตัว = n(n-1)(n-2) &#247; (3&#183;2&#183;1)   เซต</font><br>.......................................<br>
+<font face="MS Sans Serif" size="2" color="#0066ff">จำนวนสับเซตที่มีสมาชิก r ตัว 
+= n(n-1)(n-2) … (n-r+1) &#247; (r&#183;(r-1)&#183;(r-2)&#183;...&#183;1) เซต</font> 
+</font></font> </font> 
+</body></html>

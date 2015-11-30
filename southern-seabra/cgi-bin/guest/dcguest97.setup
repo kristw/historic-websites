@@ -1,0 +1,160 @@
+# dcguest97.setup
+# Setup file for DCGuest97 Script
+# Written By David S. Choi, dc@sitedeveloper.com
+# 16 November 1997
+#
+##########  YOU MUST KEEP THIS COPYRIGHTS NOTICE INTACT ###############
+# Copyright  ฉ1997 DCScripts All Rights Reserved
+# As part of the installation process, you will be asked
+# to accept the terms of this Agreement. This Agreement is
+# a legal contract, which specifies the terms of the license
+# and warranty limitation between you and DCScripts and DCGUEST97.
+# You should carefully read the following terms and conditions before
+# installing or using this software.  Unless you have a different license
+# agreement obtained from DCScripts, installation or use of this software
+# indicates your acceptance of the license and warranty limitation terms
+# contained in this Agreement. If you do not agree to the terms of this
+# Agreement, promptly delete and destroy all copies of the Software.
+#
+# Versions of the Software 
+# You may install as many copies of DCGUEST97 Script.
+# 
+# License to Redistribute
+# Distributing the software and/or documentation with other products
+# (commercial or otherwise) or by other than electronic means without
+# DCScripts's prior written permission is forbidden.
+# All rights to the DCGUEST97 software and documentation not expressly
+# granted under this Agreement are reserved to DCScripts.
+#
+# Disclaimer of Warranty
+# THIS SOFTWARE AND ACCOMPANYING DOCUMENTATION ARE PROVIDED "AS IS" AND
+# WITHOUT WARRANTIES AS TO PERFORMANCE OF MERCHANTABILITY OR ANY OTHER
+# WARRANTIES WHETHER EXPRESSED OR IMPLIED.   BECAUSE OF THE VARIOUS HARDWARE
+# AND SOFTWARE ENVIRONMENTS INTO WHICH HKDBOARD MAY BE USED, NO WARRANTY OF
+# FITNESS FOR A PARTICULAR PURPOSE IS OFFERED.  THE USER MUST ASSUME THE
+# ENTIRE RISK OF USING THIS PROGRAM.  ANY LIABILITY OF HKDESIGN WILL BE
+# LIMITED EXCLUSIVELY TO PRODUCT REPLACEMENT OR REFUND OF PURCHASE PRICE.
+# IN NO CASE SHALL DCSCRIPTS BE LIABLE FOR ANY INCIDENTAL, SPECIAL OR
+# CONSEQUENTIAL DAMAGES OR LOSS, INCLUDING, WITHOUT LIMITATION, LOST PROFITS
+# OR THE INABILITY TO USE EQUIPMENT OR ACCESS DATA, WHETHER SUCH DAMAGES ARE
+# BASED UPON A BREACH OF EXPRESS OR IMPLIED WARRANTIES, BREACH OF CONTRACT,
+# NEGLIGENCE, STRICT TORT, OR ANY OTHER LEGAL THEORY. THIS IS TRUE EVEN IF
+# DCSCRIPTS IS ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. IN NO CASE WILL
+# DCSCRIPT'S LIABILITY EXCEED THE AMOUNT OF THE LICENSE FEE ACTUALLY PAID
+# BY LICENSEE TO DCSCRIPTS.
+#
+# Credits:
+# This script uses mail-lib.pl written by Gunther Birznieks. 
+# Date Created: 2-22-96
+# Date Last Modified: 5-5-96
+#
+###########################################################################
+
+# list of bad words - case insensitive
+# add your own...
+
+@badwords = qw( 
+   fuck shit pussy dick ass asshole blowjob cock tit เย็ด ส้นตีน มึง สัตว์ จันไร จรรไร  โคตร 
+);
+
+# location of your cgi directory
+# use relative path if it works
+
+$cgidir = ".";
+
+# url of where your dcguest97.pl is located
+
+$scripturl = "http://ac-118.hypermart.net/seabra/cgi-bin/guest";
+
+# dcguest97 script url
+
+$dcscript = "$scripturl/dcguest97.cgi";
+
+# location of template file - don't need to change if you place all
+# the files in the same directory
+
+$booktemplate = "$cgidir/guestbook.htmlt";
+
+# location of your data file
+# You must create this sub directory and make it 777
+
+$datadir = "$cgidir/Data";
+
+# data file path and name - no need to create it
+# make sure this file is 666
+
+$datafile = "$datadir/guestdata.txt";
+
+# counter file
+# make sure this file is 666
+
+$counter = "$datadir/guestcount.txt";
+
+# number of guest to view per page
+
+$num_view = 30;
+
+# Option to send notification to the admin
+# and to the guest
+
+$admin_email = "ray_am\@yahoo.com";
+
+# If you don't want to use it, set these "off"
+
+$send_mail_to_admin = "off";
+$send_mail_to_guest = "off";
+
+# controls the message table
+
+$bgcolorb = "#f8f8f8";
+$bgcolor = "#f0f0f0";
+$text_color = "\#3399ff";
+
+# Define various Headeres and Subheaders for each page
+
+# The main page
+
+$display_guest_header = "";
+$display_guest_sub_header .= qq~
+<font face="ms sans serif" color=\#3399ff size=1>[ <a href="$dcscript?action=add_form">Sign our Guestbook</a> ]</font>
+~;
+
+# Add guest form page
+
+$add_guest_header = "Sign Guestbook";
+$add_guest_sub_header = "<font face=\"ms sans serif\" size=1 color=\#3399ff>Complete the form to sign our guestbook</font>";
+
+# Thank you page
+
+$thank_you_header = "Thank You ";
+$thank_you_sub_header = "ขอบคุณที่ลงชื่อใน Guestbook นะครับ<br>[<a href=\"dcguest97.cgi\">กลับไปหน้าแรกของ Guestbook</a>]";
+
+# Thank you message that gets e-mailed to the guest
+
+$thank_you_message .= qq~
+
+Thank you for signing our Guestbook.
+Please visit us again soon.
+
+David
+DCScripts
+http://www.sitedeveloper.com
+~;
+
+			  
+# Define fields for guests
+
+@guest_fields = ("ID","Name","Date","Email","Icq","Homepage","Comment");
+
+# If you want to require certain fields, add them to this array
+
+@required_fields = ("Name","Comment");
+
+# Define input form type - don't change it you're
+# using this guestbook in default configuration
+
+%field_input_type = ("Name","text",
+					"Email","text",
+					"Icq","text",
+					"Homepage","text",
+					"Comment","textarea");

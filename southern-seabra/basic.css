@@ -1,0 +1,17 @@
+a:link { color: #005CA2; text-decoration: none}
+a:visited { color: #005CA2; text-decoration: none}
+a:active { color: #0099FF; text-decoration: underline}
+a:hover { color: #0099FF; text-decoration: underline}
+.input {  font: 15px ms sans serif; color: #3399ff; 
+	BORDER-BOTTOM: #3399ff solid thin;
+    BORDER-LEFT: #3399ff solid thin;
+    BORDER-RIGHT:#3399ff solid thin;
+    BORDER-TOP: #3399ff solid thin; background: #6BDAFA ; width : 300 ; }
+.button {  font: 12px ms sansserif; color: #ffffff;
+	BORDER-BOTTOM: #6BDAFA solid thin;
+    BORDER-LEFT: #6BDAFA solid thin;
+    BORDER-RIGHT:#6BDAFA solid thin;
+    BORDER-TOP: #6BDAFA solid thin; background: #3399ff ; width : 100;}
+
+body {  margin: 0px  0px; padding: 0px  0px;background-attachment: fixed; background-repeat : no-repeat }
+//background : repeat-x fixed bottom, right

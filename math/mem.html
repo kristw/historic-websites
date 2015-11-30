@@ -1,0 +1,222 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE> New Document </TITLE>
+<META NAME="Generator" CONTENT="EditPlus">
+<META NAME="Author" CONTENT="">
+<META NAME="Keywords" CONTENT="">
+<META NAME="Description" CONTENT="">
+<script language="JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+</HEAD>
+ <style type="text/css">
+<!--
+A:link, A:visited { text-decoration: none; color:#0066ff}
+A:hover { text-decoration: none; color : #0088ff}
+body{scrollbar-face-color:       white ; 
+       scrollbar-shadow-color:     white ;
+       scrollbar-highlight-color:  white ; 
+       scrollbar-3dlight-color:    white ;
+       scrollbar-darkshadow-color: white ; 
+       scrollbar-track-color:      white ; 
+       scrollbar-arrow-color:      black }
+.input {  
+	BORDER-BOTTOM: black solid thin;
+    BORDER-LEFT: black solid thin;
+    BORDER-RIGHT:black solid thin;
+    BORDER-TOP: black solid thin;
+	BORDER-WIDTH : 1;
+    }
+.button {  
+	BORDER-BOTTOM: black solid thin;
+    BORDER-LEFT: black solid thin;
+    BORDER-RIGHT:black solid thin;
+    BORDER-TOP: black solid thin;
+	BORDER-WIDTH : 1;
+	background : white;
+	font-family : verdana;
+	font-size : 8pt;
+	width : 65
+    }
+-->
+</style>
+<BODY BGCOLOR="#FFFFFF" onLoad="MM_preloadImages('wenn/exam1.gif','wenn/exam2.gif','wenn/exam3.gif','wenn/exam4.gif')">
+<font face="ms sans serif" color="black" size=2> <u>การหาจำนวนสมาชิกของเซตจำกัด</u></font> 
+<!-- #######################################3 -->
+<br>
+<p><font face="MS Sans Serif" size="2"><b>1.&nbsp;&nbsp;ถ้า A และ B เป็นสมาชิกจำกัด 
+  และ A^B = <FONT FACE="Symbol">&#198;</FONT>  แล้ว</b><br>
+::::::::::::<font color="#0066ff"> n(AUB) = n(A)+n(B) </font>::::::::::::<br>
+  <br>
+  EX. กำหนดให้ A={1,2,3,4,5} B={6,7,8} จงหา n(AUB)<br><br>
+  <textarea name="textfield" cols="50" class=input></textarea>
+  <font face="verdana" style="font-size: 8pt"><a onClick="textfield.value=' n(AUB) = n(A)+n(B) = 5+3 = 8';" style="cursor:hand"><b>Answer</b></a> | <a onClick="textfield.value=''" style="cursor:hand"><b>Clear</b></a></font></font></p>
+
+
+<p><font face="MS Sans Serif" size="2"> </font></p>
+<p><font face="MS Sans Serif" size="2">EX. กำหนดให้ A={a,b,c} B={x,y,z} จงหา 
+  n(AUB)<br>
+  </font></p>
+  <textarea name="textfield2" cols="50" class=input></textarea>
+  <font face="verdana" style="font-size: 8pt"><a onClick="textfield2.value=' n(AUB) = n(A)+n(B) = 3+3 = 6';" style="cursor:hand"><b>Answer</b></a> | <a onClick="textfield2.value=''" style="cursor:hand"><b>Clear</b></a></font><p></p>
+
+<!-- #######################################3 --><br>
+<p><font face="MS Sans Serif" size="2"><b>2.&nbsp;&nbsp;ถ้า A<sub>1</sub>,A<sub>2</sub>,A<sub>3</sub>,...,A<sub>m</sub> เป็นเซตจำกัด และเป็นเซทต่างสมาชิกทีละคู่แล้ว </b>
+<br>
+::::::::::::<font color="#0066ff"> n(A<sub>1</sub>UA<sub>2</sub>UA<sub>3</sub>U...UA<sub>m</sub>) = n(A<sub>1</sub>)+n(A<sub>2</sub>)+...n(A<sub>m</sub>) </font>::::::::::::<br>
+<br>
+
+  EX. กำหนดให้ A={0,1,2,3} B={4,5,6} C={9,10,11,12,13} จงหา n(AUBUC)<br><br>
+  <textarea name="textfield3" cols="50" class=input></textarea>
+  <font face="verdana" style="font-size: 8pt"><a onClick="textfield3.value=' n(AUBUC) = n(A)+n(B)+n(C) = 4+3+5 =12';" style="cursor:hand"><b>Answer</b></a> | <a onClick="textfield3.value=''" style="cursor:hand"><b>Clear</b></a></font>
+  </font></p>
+
+<!-- #######################################3 --><br>
+<p><font face="MS Sans Serif" size="2"><b>3. ถ้า A และ B เป็นเซตจำกัด และ A^B แล้ว </b>
+<br>
+::::::::::::<font color="#0066ff"> n(AUB)=n(A)+n(B)-n(A^B) </font>::::::::::::<br>
+<br>
+  
+  EX. กำหนดให้ A={0,1,2,3,4}  B={3,4,5} จงหา n(AUB)<br><br>
+  <textarea name="textfield4" cols="50" class=input></textarea>
+  <font face="verdana" style="font-size: 8pt"><a onClick="textfield4.value=' n(AUB) = n(A)+n(B)-n(A^B) = 3+5-2 = 6';" style="cursor:hand"><b>Answer</b></a> | <a onClick="textfield4.value=''" style="cursor:hand"><b>Clear</b></a></font>
+  </font></p>
+
+<!-- #######################################3 --><br>
+
+<p><font face="MS Sans Serif" size="2"><b>4. ถ้า A,B และ C เป็นเซตจำกัดใดๆแล้ว</b><br>
+::::::::::::<font color="#0066ff"> n(AUBUC) = n(A)+n(B)+n(C)-n(A^B)-n(A^C)-(B^C)+n(A^B^C) </font>::::::::::::<br>
+</font></p>
+
+<font face="ms sans serif" color="black" size=2>  
+  EX. กำหนด n(A)=43 n(B)=40 n(C)=43 n(A^B)=8 n(A^C)=13 n(B^C)=11 n(AUBUC)=100 <br>
+  จงหา n(A^B^C)<br><br>
+<textarea name="textfield9" cols="50" class=input rows=5></textarea>
+  <font face="verdana" style="font-size: 8pt"><a onClick="textfield9.value=' n(AUBUC) = n(A)+n(B)+n(C)-n(A^B)-n(A^C)-(B^C)\n                    +n(A^B^C)      \n          100 = 43+40+43-8-13-11\n                    +n(A^B^C)                 \n n(A^B^C) = 6';" style="cursor:hand"><b>Answer</b></a> | <a onClick="textfield9.value=''" style="cursor:hand"><b>Clear</b></a></font>
+</font><p></p>
+  
+
+<!-- #######################################3 --><br>
+
+<p><font face="MS Sans Serif" size="2"><b>5. ถ้า A และ B เป็นเซตจำกัดแล้ว</b><br>
+::::::::::::<font color="#0066ff"> n(A-B) = n(A)-n(A^B) </font>::::::::::::<br>
+::::::::::::<font color="#0066ff"> n(B-A) = n(B)-n(A^B) </font>::::::::::::<br>
+</font></p>
+
+
+<!-- #######################################3 --><br>
+<p><font face="MS Sans Serif" size="2"><b>6. ถ้า A เป็นสับเซตของเอกภพสัมพัทธ์ 
+  และ เป็นเซตจำกัด แล้ว</b><br>
+  ::::::::::::<font color="#0066ff"> n(A') = n(Universe)-n(A) </font>::::::::::::<br>
+  <br>
+  EX. กำหนดให้ A และ B เป็นสับเซตของยูนิเวิร์ส โดยที่ n(Universe)=100 ,n(A)=60 
+  ,n(B)=75 และ n(A^B)=45 จงหา<br>
+  <br>
+  1) n(A')<br>
+  <textarea name="textfield5" cols="50" class=input></textarea>
+  <font face="verdana" style="font-size: 8pt"><a onClick="textfield5.value=' n(A\') = n(Universe)-n(A) = 100-60 = 40';" style="cursor:hand"><b>Answer</b></a> 
+  | <a onClick="textfield5.value=''" style="cursor:hand"><b>Clear</b></a></font> 
+  <br>
+  <br>
+  2) n(B')<br>
+  <textarea name="textfield6" cols="50" class=input></textarea>
+  <font face="verdana" style="font-size: 8pt"><a onClick="textfield6.value=' n(B\') = n(Universe)-n(B) = 100-75 = 25';" style="cursor:hand"><b>Answer</b></a> 
+  | <a onClick="textfield6.value=''" style="cursor:hand"><b>Clear</b></a></font> 
+  <br>
+  <br>
+  ::::::::::::<font color="#0066ff"> Tips : การวาดแผนภาพเวนน์ & ออยเลอร์ จะทำให้โจทย์ดูง่ายลงมาก 
+  เช่นข้อต่อไปนี้ </font>::::::::::::<br>
+  <br>
+  3) n(AUB')<br>
+  <textarea name="textfield7" cols="50" class=input></textarea>
+  <font face="verdana" style="font-size: 8pt"><a onClick="textfield7.value=' n(AUB\') = n(B\')+n(A^B) = 25+45 = 70';" style="cursor:hand"><b>Answer</b></a> 
+  | <a onClick="textfield7.value=''" style="cursor:hand"><b>Clear</b></a></font> 
+  <br>
+  <br>
+  4)n(BUA')<br>
+  <textarea name="textfield8" cols="50" class=input></textarea>
+  <font face="verdana" style="font-size: 8pt"><a onClick="textfield8.value=' n(ฺBUA\') = n(A\')+n(A^B) = 40+45 = 85';" style="cursor:hand"><b>Answer</b></a> 
+  | <a onClick="textfield8.value=''" style="cursor:hand"><b>Clear</b></a></font> 
+  <br>
+  <br>
+  <br>
+  <font face="MS Sans Serif" size="2"><u>โจทย์ปัญหา</u></font> <br>
+  <br>
+  1. คนกลุ่มหนึ่งมี 50 คน จากการตรวจโรค 2 โรค คือโรคฟันกับโรคตาบอด ผลการตรวจโรคพบว่า 
+  เป็นโรคฟัน 15 คน เป็นโรคตาบอด 30 คน เป็นทั้ง 2 โรค 5 คน คนที่ไม่เป็นโรคใดๆมีกี่คน<br>
+  <br>
+  <textarea name="textfield10" cols="50" class=input rows=6></textarea>
+  <font face="verdana" style="font-size: 8pt"><a onClick="textfield10.value=' ให้ A แทนเซตของคนเป็นโรคฟัน\n ให้ B แทนเซตของคนตาบอด\n (AUB)\' แทนคนไม่เป็นโรค\n n(AUB)\' = n(Universe)-n(AUB)\n =50-40\n =10 คน';" style="cursor:hand"><b>Answer</b></a> 
+  | <a onClick="textfield10.value=''" style="cursor:hand"><b>Clear</b></a></font> 
+  <br>
+  <br>
+  <img src="wenn/click.gif" width="150" height="100" name="Image1" onClick="MM_swapImage('Image1','','wenn/exam1.gif',1)" border="1" onDblClick="MM_swapImgRestore()"> 
+  <br>
+  <br>
+  </font> 
+<p><font face="MS Sans Serif" size="2">2.มีคนกลุ่มหนึ่ง 500 คน ตรวจโรค 3 โรค คือ 
+  A,B,C จากการตรวจโรคพบว่าคนเป็นโรค A=150 คน โรค B=120 คน โรค C=110คน เป็นโรค 
+  A และ B 50 คน เป็นโรค B และ C 20 คน เป็นโรค A และ C 30 คน เป็นทั้ง 3 โรค 5 คน<br>
+  จงหาว่า <br>
+  ก.) เป็นเฉพาะโรค A มีกี่คน<br>
+  ข.) คนที่เป็นโรค A และ C แต่ไม่เป็นโรค B มีกี่คน<br>
+  ค.) คนที่ไม่เป็นโรคใดๆ ในการตรวจโรคครั้งนี้<br>
+  <br>
+  <img src="wenn/click.gif" width="150" height="100" name="Image2" onClick="MM_swapImage('Image2','','wenn/exam2.gif',1)" border="1" onDblClick="MM_swapImgRestore()"><br>
+  </font></p>
+<p></p>
+<p><font face="MS Sans Serif" size="2">3.ห้องเรียนห้องหนึ่งมีนักเรียนชาย 30 คน 
+  และนักเรียนหญิง 20 คน จากการสอบวิชาคณิตศาสตร์และวิชาฟิสิกส์พบว่า มีนักเรียนสอบตกวิชาคณิตศาสตร์ 
+  15 คน ในจำนวนนั้นเป็นนักเรียนชาย 7 คน มีนักเรียนสอบตกวิชาฟิสิกส์ 10 คน ในจำนวนนี้เป็นชาย 
+  4 คน มีนักเรียนสอบตกทั้ง 2 วิชา 3 คน ในจำนวนนี้เป็นหญิง 1 คน<br>
+  จงหา <br>
+  ก.)จำนวนนักเรียนที่สอบตกคณิตศาสตร์ 15 คน ในจำนวนนี้เป็นชาย 7 คน<br>
+  ข.) จำนวนนักเรียนที่สอบตกฟิสิกส์ แค่สอบได้คณิตศาสตร์<br>
+  ค.) จำนวนนักเรียนที่สอบได้ทั้งสองวิชา<br>
+  ง.) จำนวนนักเรียนชายที่สอบได้ทั้งสองวิชา<br>
+  จ.) จำนวนนักเรียนหญิงที่สอบได้เพียงวิชาเดียว<br>
+  <br>
+  <img src="wenn/click.gif" width="150" height="100" name="Image3" onClick="MM_swapImage('Image3','','wenn/exam3.gif',1)" border="1" onDblClick="MM_swapImgRestore()"><br>
+  </font></p>
+<p><font face="MS Sans Serif" size="2">4.จากการสำรวจการลงทะเบียนเลือกวิชาเรียนในวิชาคณิตศาสตร์,ฟิสิกส์,เคมี 
+  ของนักเรียนกลุ่มหนึ่งพบว่ามีนักเรียนที่ไม่ได้เลือกวิชาใดเลย 9%<br>
+  มีนักเรียนที่เลือกเรียนวิชาคณิตศาสตร์และฟิสิกส์ แต่ไม่เลือกเคมี 12%<br>
+  มีนักเรียนที่เลือกเรียนวิชาคณิตศาสตร์และเคมี แต่ไม่เลือกฟิสิกส์ 14%<br>
+  มีนักเรียนที่เลือกเรียนวิชาเคมีและฟิสิกส์ แต่ไม่เลือกคณิตศาสตร์ 11%<br>
+  มีนักเรียนที่เลือกเรียนวิชาคณิตศาสตร์ 60%<br>
+  มีนักเรียนที่เลือกเรียนวิชาฟิสิกส์ 48%<br>
+  มีนักเรียนที่เลือกเรียนวิชาเคมี เพียงวิชาเดียว 6%<br>
+  จงหาว่ามีนักเรียนที่เลือกเรียนทั้งสามวิชากี่ %<br>
+  <br>
+  <textarea name="textfield11" cols="50" class=input rows=9></textarea>
+  <font face="verdana" style="font-size: 8pt"><a onClick="textfield11.value=' ให้ A แทนเซตของคนเรียนเคมี\n ให้ B แทนเซตของคนเรียนฟิสิกส์\n ให้ C แทนเซตของคนเรียนคณิตศาสตร์\n ให้ x แทนเซตของคนเรียนทุกอย่าง\n จากภาพ\n   n((AUB)-C) + n(C) + 9 = 100\n (6+11+(25-x)) + 60 + 9 = 100\n                           42 - x = 31 \n                                  x = 11  Ans';" style="cursor:hand"><b>Answer</b></a> 
+  | <a onClick="textfield11.value=''" style="cursor:hand"><b>Clear</b></a></font> 
+  <br>  <br>
+  <img src="wenn/click.gif" width="150" height="100" border="1" name="Image4" onClick="MM_swapImage('Image4','','wenn/exam4.gif',1)" onDblClick="MM_swapImgRestore()"></font></p>
+<p>&nbsp;
+</BODY>
+</HTML>

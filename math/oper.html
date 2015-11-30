@@ -1,0 +1,564 @@
+<HTML>
+<HEAD>
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>การดำเนินการบนเซต (Operation  of  Set )</TITLE>
+</HEAD>
+ <style type="text/css">
+<!--
+A:link, A:visited { text-decoration: none; color:#0066ff}
+A:hover { text-decoration: none; color : #0088ff}
+body{scrollbar-face-color:       white ; 
+       scrollbar-shadow-color:     white ;
+       scrollbar-highlight-color:  white ; 
+       scrollbar-3dlight-color:    white ;
+       scrollbar-darkshadow-color: white ; 
+       scrollbar-track-color:      white ; 
+       scrollbar-arrow-color:      black }
+.input {  
+	BORDER-BOTTOM: black solid thin;
+    BORDER-LEFT: black solid thin;
+    BORDER-RIGHT:black solid thin;
+    BORDER-TOP: black solid thin;
+	BORDER-WIDTH : 1;
+    }
+.button {  
+	BORDER-BOTTOM: black solid thin;
+    BORDER-LEFT: black solid thin;
+    BORDER-RIGHT:black solid thin;
+    BORDER-TOP: black solid thin;
+	BORDER-WIDTH : 1;
+	background : white;
+	font-family : verdana;
+	font-size : 8pt;
+	width : 65
+    }
+-->
+</style>
+<BODY bgcolor=white>
+
+<U><FONT FACE="Cordia New" SIZE=4>
+<P><font face="MS Sans Serif" size="2">การดำเนินการบนเซต (Operation of Set )</font><FONT FACE="Cordia New" SIZE=4> 
+  </FONT></P>
+</font></U><FONT FACE="Cordia New" SIZE=4>
+<P><font face="MS Sans Serif" size="2">1. <b>ยูเนียน</b> ( Union )</font></P>
+</FONT> 
+<P><font face="MS Sans Serif" size="2">&#9;<U>นิยาม </U>&#9;กำหนดให้ A , B เป็นเซตใดๆ 
+  ยูเนียนของเซต A , B คือ เซตที่ประกอบด้วยสมาชิกซึ่งอยู่ในเซต A หรือ เซต B หรืออยู่ทั้งในเซต 
+  A และ เซต B เขียนแทนด้วย A U B นั่นคือ <br>
+  <br>
+  </font><font face="MS Sans Serif" size="2" color="#0066ff">A U B = &#123; x 
+  | x <font face="Symbol">ฮ</font>A หรือ x<font face="Symbol"> ฮ</font>B&#125; 
+  <br>
+  <br>
+  </font> <FONT FACE="Cordia New" SIZE=4><img src="wenn/AUB.gif" width="150" height="100" border="1"> 
+  </FONT></P>
+<FONT FACE="Cordia New" SIZE=4> 
+<font face="MS Sans Serif" size="2">EX. กำหนด A = &#123; 1,2,3,4,5&#125; B 
+  = &#123; 3,4,6&#125; C = &#123; 5,7,8&#125;</font> <br>
+  <font face="MS Sans Serif" size="2">จงหา &#9;<br>
+  <br>
+  1. A U B&#9;&#9;<br>
+  <textarea name="textfield" cols="50" class=input rows=1></textarea>
+  <font face="verdana" style="font-size: 8pt"><a onClick="textfield.value=' {1,2,3,4,5,6}';" style="cursor:hand"><b>Answer</b></a> 
+  | <a onClick="textfield.value=''" style="cursor:hand"><b>Clear</b></a></font> <br>
+<br>
+
+  2. B U A &#9;<br>
+  <textarea name="textfield2" cols="50" class=input rows=1></textarea>
+  <font face="verdana" style="font-size: 8pt"><a onClick="textfield2.value=' {1,2,3,4,5,6}';" style="cursor:hand"><b>Answer</b></a> 
+  | <a onClick="textfield2.value=''" style="cursor:hand"><b>Clear</b></a></font> <br>
+  <br>
+  
+  3. A U C&#9;&#9;<br>
+    <textarea name="textfield3" cols="50" class=input rows=1></textarea>
+  <font face="verdana" style="font-size: 8pt"><a onClick="textfield3.value=' {1,2,3,4,5,7,9}';" style="cursor:hand"><b>Answer</b></a> 
+  | <a onClick="textfield3.value=''" style="cursor:hand"><b>Clear</b></a></font> <br>
+<br>
+  
+  4. C U A<br>
+    <textarea name="textfield4" cols="50" class=input rows=1></textarea>
+  <font face="verdana" style="font-size: 8pt"><a onClick="textfield4.value=' {1,2,3,4,5,7,9}';" style="cursor:hand"><b>Answer</b></a> 
+  | <a onClick="textfield4.value=''" style="cursor:hand"><b>Clear</b></a></font> <br>
+<br>
+  
+  5. B U C&#9;&#9;<br>
+    <textarea name="textfield5" cols="50" class=input rows=1></textarea>
+  <font face="verdana" style="font-size: 8pt"><a onClick="textfield5.value=' {3,4,5,6,7,9}';" style="cursor:hand"><b>Answer</b></a> 
+  | <a onClick="textfield5.value=''" style="cursor:hand"><b>Clear</b></a></font> <br>
+<br>
+  
+  6. C U B&#9;&#9;<br>
+    <textarea name="textfield6" cols="50" class=input rows=1></textarea>
+  <font face="verdana" style="font-size: 8pt"><a onClick="textfield6.value=' {3,4,5,6,7,9}';" style="cursor:hand"><b>Answer</b></a> 
+  | <a onClick="textfield6.value=''" style="cursor:hand"><b>Clear</b></a></font> <br>
+<br>
+  
+  7. (A U B) U C&#9;<br>
+    <textarea name="textfield7" cols="50" class=input rows=1></textarea>
+  <font face="verdana" style="font-size: 8pt"><a onClick="textfield7.value=' {1,2,3,4,5,6,7,9}';" style="cursor:hand"><b>Answer</b></a> 
+  | <a onClick="textfield7.value=''" style="cursor:hand"><b>Clear</b></a></font> <br>
+<br>
+  
+  8. A U (B U C)</font><br>
+  <textarea name="textfield8" cols="50" class=input rows=1></textarea>
+  <font face="verdana" style="font-size: 8pt"><a onClick="textfield8.value=' {1,2,3,4,5,6,7,9}';" style="cursor:hand"><b>Answer</b></a> 
+  | <a onClick="textfield8.value=''" style="cursor:hand"><b>Clear</b></a></font> <br>
+</FONT> <U><FONT FACE="Cordia New" SIZE=4> 
+<P><font face="MS Sans Serif" size="2"><br>
+  คุณสมบัติของยูเนียน</font></P>
+</font></U> <FONT FACE="Cordia New" SIZE=4><font face="MS Sans Serif" size="2">1. 
+คุณสมบัติการสลับที่ ถ้า A , B เป็นเซตใดๆ แล้ว <font color="#0066ff">A U B = B 
+U A<br>
+</font></font></font><FONT FACE="Cordia New" SIZE=4><font face="MS Sans Serif" size="2">2. 
+คุณสมบัติการเปลี่ยนกลุ่ม ถ้า A , B, C เป็นเซตใดๆ แล้ว <font color="#0066ff">(A 
+U B) U C = A U (B U C)<br>
+</font></font></font><FONT FACE="Cordia New" SIZE=4><font face="MS Sans Serif" size="2">3. 
+ให้ A , B เป็นเซตใดๆ จะได้ว่า <font color="#0066ff">A U B = B เมื่อ A <font face="Symbol">&#204;</font> 
+B<br>
+</font></font></font><FONT FACE="Cordia New" SIZE=4><font face="MS Sans Serif" size="2">4. 
+ถ้า A เป็นเซตใดๆแล้ว <font color="#0066ff">A U <font face="Symbol">&#198;</font> 
+= A<br>
+</font></font></font><FONT FACE="Cordia New" SIZE=4><font face="MS Sans Serif" size="2">5. 
+ถ้า A เป็นเซตใดๆของ u แล้ว A U u = u<br>
+</font></font><FONT FACE="Cordia New" SIZE=4><font face="MS Sans Serif" size="2">6. 
+ถ้า A เป็นเซตใดๆแล้ว <font color="#0066ff">A U A = A<br>
+</font></font></font><FONT FACE="Cordia New" SIZE=4><font face="MS Sans Serif" size="2">7. 
+ถ้า A และ B เป็นเซตใดๆ แล้ว <font color="#0066ff">A <font face="Symbol">&#204;</font> 
+A U B และ B <font face="Symbol">&#204;</font> A U B <br>
+</font></font></font><FONT FACE="Cordia New" SIZE=4><font face="MS Sans Serif" size="2" color="#000000">8.</font><font face="MS Sans Serif" size="2" color="#0066ff"> 
+ถ้า B <font face="Symbol">&#204;</font> A และ C <font face="Symbol">&#204;</font> 
+A แล้ว B U C<font face="Symbol"> &#204;</font> A<br>
+</font></font><FONT FACE="Cordia New" SIZE=4><font face="MS Sans Serif" size="2" color="#000000">9.</font><font face="MS Sans Serif" size="2" color="#0066ff"> 
+A U B = <font face="Symbol">&#198; </font> ก็ต่อเมื่อ A = <font face="Symbol">&#198;</font> 
+และ B = <font face="Symbol">&#198;</font></font> <U></u></font><b><FONT FACE="Cordia New" SIZE=4> 
+<P><font face="MS Sans Serif" size="2"><br>
+  หลักการหาจำนวนเซต</font></P>
+</font></b> <font face="MS Sans Serif" size="2"> เมื่อ m = จำนวนสมาชิกของ B </font><font face="Cordia New" size=4></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font face="MS Sans Serif" size="2">n 
+= จำนวนสมาชิกของ A</font> 
+<P><font face="MS Sans Serif" size="2"> 1. ถ้า B เป็นเซตจำกัด และ A <font face="Symbol">&#204;</font> 
+  B แล้ว จำนวนของเซต x โดยที่ <font color="#0066ff">A <font face="Symbol">&#204;</font> 
+  x และ x <font face="Symbol">&#204;</font> B</font> <br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; จะเท่ากับ <font color="#0066ff">2<SUP>m-n</SUP></font><SUP> 
+  </SUP>เซต<br>
+  </font><br>
+  
+<FONT FACE="Cordia New" SIZE=4> 
+<P><font face="MS Sans Serif" size="2">2. ถ้า B เป็นเซตจำกัด และ A <font face="Symbol">&#204;</font> 
+  B โดยที่ <font color="#0066ff">A มีสมาชิกเพียงตัวเดียว</font>แล้ว จำนวนของเซต 
+  x โดยที่ <font color="#0066ff">A <font face="Symbol">&#203;</font> x และ x <font face="Symbol">&#204;</font> 
+  B</font> <br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;จะเท่ากับ <font color="#0066ff">2<SUP>m-n</SUP></font><SUP> 
+  </SUP>เซต <br>
+  <br>
+  </font><font face="MS Sans Serif" size="2">3. ถ้า B เป็นเซตจำกัด และ A <font face="Symbol">&#204;</font> 
+  B แล้ว จำนวนของเซต x โดยที่ <font color="#0066ff">A <font face="Symbol">&#203;</font> 
+  x และ x <font face="Symbol">&#204;</font> B</font> <br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= (จำนวนเซต 
+  x โดยที่ x <font face="Symbol">&#204;</font> B ) - (จำนวนเซต x โดยที่ <font face="Cordia New" size=4><font face="MS Sans Serif" size="2">A</font></font> 
+  <font face="Symbol">&#204;</font> </font><font face="Cordia New" size=4><font face="MS Sans Serif" size="2">x</font></font><font face="MS Sans Serif" size="2"> 
+  และ x <font face="Symbol">&#204;</font> B ) <br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = <font color="#0066ff">2<SUP>m 
+  </SUP>- 2<SUP>m-n</SUP></font></font> </P>
+</FONT> <font face="MS Sans Serif" size="2">Ex. กำหนด กำหนด A = &#123;a&#125; 
+B = &#123; a,b,c,d,e&#125; จงหาจำนวนของเซต A โดยที่ A <font face="Symbol">&#203;</font> 
+x และ x <font face="Symbol">&#204;</font> B</font> 
+<textarea name="textfield9" cols="50" class=input rows=2></textarea>
+<font face="verdana" style="font-size: 8pt"><a onClick="textfield9.value=' m-n = 5-1 = 4 \n 2 กำลัง 4 = 16 เซต';" style="cursor:hand"><b>Answer</b></a> 
+| <a onClick="textfield9.value=''" style="cursor:hand"><b>Clear</b></a></font> 
+<B><U></u></B> 
+<P><font face="MS Sans Serif" size="2"><br>
+  2.</font><FONT FACE="AngsanaUPC" SIZE=5> <b><font face="MS Sans Serif" size="2" color="#000000">การอินเตอร์เซกชั่น 
+  </font></b></font><font face="MS Sans Serif" size="2" color="#000000"> (Intersection)</font></P>
+<FONT FACE="AngsanaUPC" SIZE=5> 
+<P><font face="MS Sans Serif" size="2" color="#000000"><u>นิยาม</u> อินเตอร์เซกชั่นของ 
+  A และ B คือเซตที่ประกอบด้วย สมาชิกของ A และ B ทั้ง 2 เซต นั่นคือ</font></P>
+</FONT> 
+<P><font face="MS Sans Serif" size="2" color="#0066ff">A <font face="Symbol">&#199;</font> 
+  B = &#123; X <font face="Symbol">&#206;</font> u<font face="Symbol"> |</font> 
+  X <font face="Symbol">&#206;</font>X | A <font face="Symbol">&#206;</font> B 
+  &#125;<br>
+  </font><font size="2" face="MS Sans Serif" color="#0066ff">A <font face="Symbol">&#199;</font> 
+  B = A <font face="Symbol">&#200;</font> B B <font face="Symbol">&#204;</font> 
+  A ได้ A<font face="Symbol"> &#199;</font> B = B <br>
+  <br>
+  <img src="wenn/pic02.gif" width="150" height="100" border="1"> </font></P>
+<P><font face="MS Sans Serif" size="2" color="#000000">EX กำหนดให้ </font><font face="MS Sans Serif" size="2" color="#000000"><br>
+  <br>
+  A = &#123; 1,2,3,4,5,6,7 &#125; </font><br>
+  <font size="2" face="MS Sans Serif" color="#000000">B = &#123; 1,3,5,7,9 &#125; 
+  </font><br>
+  <font face="MS Sans Serif" size="2" color="#000000">C = &#123; 3,4,5,7 &#125; 
+  <br>
+  <br>
+  จงหา <br>
+  &#9;</font></P>
+<FONT FACE="AngsanaUPC" SIZE=5> 
+
+<P><font face="MS Sans Serif" size="2" color="#000000">1. &#9;(A <font face="Symbol">&#199;</font> 
+  B) <font face="Symbol">&#199;</font> C&#9;&#9;
+  
+  <br>
+  <textarea name="intersect" cols="50" class=input rows=1></textarea>
+  <font face="verdana" style="font-size: 8pt"><a onClick="intersect.value=' {3,5,7}';" style="cursor:hand"><b>Answer</b></a> 
+  | <a onClick="intersect.value=''" style="cursor:hand"><b>Clear</b></a></font> <br>
+  </font></P>
+
+<P><font face="MS Sans Serif" size="2" color="#000000"> 2. &#9; A <font face="Symbol">&#199;</font> 
+  ( B <font face="Symbol">&#199;</font> C )&#9;&#9;
+  
+<br>
+  <textarea name="intersect2" cols="50" class=input rows=1></textarea>
+  <font face="verdana" style="font-size: 8pt"><a onClick="intersect2.value=' {3,5,7}';" style="cursor:hand"><b>Answer</b></a> 
+  | <a onClick="intersect2.value=''" style="cursor:hand"><b>Clear</b></a></font> <br>
+  </font></P>
+  
+  </FONT> 
+
+   <P><font face="MS Sans Serif" size="2" color="#000000">3. &#9; A <font face="Symbol">&#199;</font> 
+      ( B <font face="Symbol">&#200;</font> C )&#9;&#9;
+
+<br>
+  <textarea name="intersect3" cols="50" class=input rows=1></textarea>
+  <font face="verdana" style="font-size: 8pt"><a onClick="intersect3.value=' {1,3,4,5,7}';" style="cursor:hand"><b>Answer</b></a> 
+  | <a onClick="intersect3.value=''" style="cursor:hand"><b>Clear</b></a></font> <br>
+  </font></P>
+	   
+	  
+  <P><font face="MS Sans Serif" size="2" color="#000000">4.&#9;(A <font face="Symbol">&#199;</font> 
+  B) <font face="Symbol">&#200;</font> (A <font face="Symbol">&#199;</font> C)&#9;
+  
+<br>
+  <textarea name="intersect4" cols="50" class=input rows=1></textarea>
+  <font face="verdana" style="font-size: 8pt"><a onClick="intersect4.value=' {1,3,4,5,7}';" style="cursor:hand"><b>Answer</b></a> 
+  | <a onClick="intersect4.value=''" style="cursor:hand"><b>Clear</b></a></font> <br>
+  </font></P>
+  
+      <P><font face="MS Sans Serif" size="2" color="#000000">5. &#9; A <font face="Symbol">&#200;</font> 
+      ( B <font face="Symbol">&#199;</font> C )&#9;&#9;
+	  
+<br>
+  <textarea name="intersect5" cols="50" class=input rows=1></textarea>
+  <font face="verdana" style="font-size: 8pt"><a onClick="intersect5.value=' {1,2,3,4,5,6,7}';" style="cursor:hand"><b>Answer</b></a> 
+  | <a onClick="intersect5.value=''" style="cursor:hand"><b>Clear</b></a></font> <br>
+  </font></P>
+	  
+
+    <P><font face="MS Sans Serif" size="2" color="#000000">6. &#9;(A <font face="Symbol">&#200;</font> 
+      B) <font face="Symbol">&#199;</font> (A <font face="Symbol">&#200;</font> 
+      C )&#9;
+	  
+	  <br>
+  <textarea name="intersect6" cols="50" class=input rows=1></textarea>
+  <font face="verdana" style="font-size: 8pt"><a onClick="intersect6.value=' {1,2,3,4,5,6,7}';" style="cursor:hand"><b>Answer</b></a> 
+  | <a onClick="intersect6.value=''" style="cursor:hand"><b>Clear</b></a></font> <br>
+  </font></P>
+	  
+  
+<br>
+<P><font face="MS Sans Serif" size="2" color="#000000">EX ให้ A = &#123; X <font face="Symbol">&#206;</font> 
+  I | X &#60; 9 &#125; B = &#123; X <font face="Symbol">&#206;</font> I | X <font face="Symbol">&#179;</font> 
+  -2 &#125; C = &#123; X <font face="Symbol">&#206;</font> I | 0 &#60; X <font face="Symbol">&#163;</font> 
+  9&#125; <br>
+  <br>
+  จงหา<br>
+  <br>
+  </font>
+  
+  
+  
+  
+  <font face="MS Sans Serif" size="2" color="#000000">1. A </font>
+
+	  <br>
+  <textarea name="intersect7" cols="50" class=input rows=1></textarea>
+  <font face="verdana" style="font-size: 8pt"><a onClick="intersect7.value=' {8,7,6,...}';" style="cursor:hand"><b>Answer</b></a> 
+  | <a onClick="intersect7.value=''" style="cursor:hand"><b>Clear</b></a></font> <br><br>
+  
+  
+  
+  
+  <font face="MS Sans Serif" size="2" color="#000000">2. B </font>
+  
+  <br>
+  <textarea name="intersect8" cols="50" class=input rows=1></textarea>
+  <font face="verdana" style="font-size: 8pt"><a onClick="intersect8.value=' {-2,-1,0,...}';" style="cursor:hand"><b>Answer</b></a> 
+  | <a onClick="intersect8.value=''" style="cursor:hand"><b>Clear</b></a></font> <br><br>
+  
+
+  <font face="MS Sans Serif" size="2" color="#000000">3. C</font>
+
+  <br>
+  <textarea name="intersect9" cols="50" class=input rows=1></textarea>
+  <font face="verdana" style="font-size: 8pt"><a onClick="intersect9.value=' {1,2,3,...,9}';" style="cursor:hand"><b>Answer</b></a> 
+  | <a onClick="intersect9.value=''" style="cursor:hand"><b>Clear</b></a></font> <br><br>
+  
+  
+  <font face="MS Sans Serif" size="2" color="#000000">  4. A <font face="Symbol">&#199;</font> B </font>
+
+<br>
+  <textarea name="intersect10" cols="50" class=input rows=1></textarea>
+  <font face="verdana" style="font-size: 8pt"><a onClick="intersect10.value=' {-2,-1,0,...,8}';" style="cursor:hand"><b>Answer</b></a> 
+  | <a onClick="intersect10.value=''" style="cursor:hand"><b>Clear</b></a></font> <br><br>
+  
+
+
+  <font face="MS Sans Serif" size="2" color="#000000">5</font><font face="MS Sans Serif" size="2" color="#000000">. 
+  A <font face="Symbol">&#199;</font> C </font>
+  
+<br>
+  <textarea name="intersect11" cols="50" class=input rows=1></textarea>
+  <font face="verdana" style="font-size: 8pt"><a onClick="intersect11.value=' {1,2,3,...,8}';" style="cursor:hand"><b>Answer</b></a> 
+  | <a onClick="intersect11.value=''" style="cursor:hand"><b>Clear</b></a></font> <br><br>
+  
+
+  <font face="MS Sans Serif" size="2" color="#000000">
+  6. B <font face="Symbol">&#199;</font> C </font> 
+
+<br>
+  <textarea name="intersect12" cols="50" class=input rows=1></textarea>
+  <font face="verdana" style="font-size: 8pt"><a onClick="intersect12.value=' {1,2,3,...,9}';" style="cursor:hand"><b>Answer</b></a> 
+  | <a onClick="intersect12.value=''" style="cursor:hand"><b>Clear</b></a></font> <br><br>
+  
+
+</P>
+<P><font face="MS Sans Serif" size="2" color="#000000"><br>
+  <u>สมบัติของการอินเตอร์เซกชั่น</u></font></P>
+<FONT SIZE=5><font face="MS Sans Serif" size="2" color="#000000">1. การสลับที่ 
+<font color="#0066ff"> A <font face="Symbol">&#199;</font> B = B <font face="Symbol">&#199;</font> 
+A </font></font></font><br>
+  <font face="MS Sans Serif" size="2" color="#000000">2. 
+  การเปลี่ยนกลุ่ม </font><font face="MS Sans Serif" size="2" color="#0066ff">(A 
+  <font face="Symbol">&#199;</font> B) <font face="Symbol">&#199;</font> C = A 
+  <font face="Symbol">&#199;</font> ( B <font face="Symbol">&#199;</font> C )&#9;
+  </font>
+  <br>
+<font face="MS Sans Serif" size="2" color="#000000">3. การแจกแจง<br>
+</font><font face="MS Sans Serif" size="2" color="#0066ff">A 
+<font face="Symbol">&#199;</font> ( B <font face="Symbol">&#200;</font> C ) = 
+(A <font face="Symbol">&#199;</font> B) <font face="Symbol">&#200;</font></font> 
+<font face="MS Sans Serif" size="2" color="#0066ff">(A <font face="Symbol">&#199;</font> 
+C)</font> <br>
+<font face="MS Sans Serif" size="2" color="#0066ff">A <font face="Symbol">&#200;</font> 
+( B <font face="Symbol">&#199;</font> C ) = (A <font face="Symbol">&#200;</font> 
+B) <font face="Symbol">&#199;</font> ( A <font face="Symbol">&#200;</font> C)</font> 
+<br>
+<font face="MS Sans Serif" size="2" color="#000000">4.<font color="#0066ff"> 
+A <font face="Symbol">&#199;</font> B = B เมื่อ B <font face="Symbol">&#204;</font> 
+A</font></font> <FONT SIZE=5></font><br>
+<font face="MS Sans Serif" size="2" color="#000000">5 . <font color="#0066ff">A 
+<font face="Symbol">&#199;</font></font></font> <font face="Symbol" size="2" color="#0066ff">&#198;</font><font face="MS Sans Serif" size="2" color="#0066ff"> 
+= <font face="Symbol">&#198;<br>
+</font></font><font face="MS Sans Serif" size="2" color="#000000">6. 
+<font color="#0066ff">A <font face="Symbol">&#199;</font> universe = A</font></font> 
+<br>
+<font face="MS Sans Serif" size="2" color="#000000">7. <font color="#0066ff">A 
+<font face="Symbol">&#199;</font> A = A</font></font> <br>
+<font face="MS Sans Serif" size="2" color="#000000">8. ถ้า <font color="#0066ff">A 
+<font face="Symbol">&#204;</font> C และ B <font face="Symbol">&#204;</font> C 
+แล้ว A <font face="Symbol">&#199;</font> B <font face="Symbol">&#204;</font> C</font></font> 
+<font face="MS Sans Serif" size="2" color="#000000"><br>
+9. <font color="#0066ff">A <font face="Symbol">&#199;</font> B <font face="Symbol">&#204;</font> 
+A และ A <font face="Symbol">&#199;</font> B <font face="Symbol">&#204;</font> 
+B</font></font> 
+<p></P>
+<P><font face="MS Sans Serif" size="2" color="#000000"><br>
+  3. <b>คอมพลิเมนต์ </b>(Complement)</font></P>
+<P><font face="MS Sans Serif" size="2" color="#000000">กำหนด universe = &#123; 
+  1,2,3, … , 10&#125; และ A = &#123; 1,3,5,7,9&#125;</font><br>
+  <font face="MS Sans Serif" size="2" color="#000000">เรียก&#123;</font> <font face="MS Sans Serif" size="2" color="#000000">2,4,6,8,10&#125; 
+  ว่า คอมพลิเมนต์ของเซต A</font></P>
+<P><font face="MS Sans Serif" size="2" color="#000000"><u>นิยาม</u> กำหนดให้ A 
+  <font face="Symbol">&#204;</font> universe </font></P>
+<P><font face="MS Sans Serif" size="2" color="#000000">&#9;คอมพลิเมนต์ของเซต A 
+  คือ เซตที่ประกอบด้วยสมาชิกซึ่งเป็นสมาชิกของ universe แต่ไม่เป็นสมาชิกของเซต 
+  A </font></P>
+<P><font face="MS Sans Serif" size="2" color="#000000">&#9;สัญลักษณ์ที่ใช้ <font color="#0066ff">A'</font> 
+  หรือ <font color="#0066ff">c[A]</font></font></P>
+<P><font face="MS Sans Serif" size="2" color="#000000">&#9;หรือ <font color="#0066ff">A' 
+  = &#123; x <font face="Symbol">&#206;</font> universe | X <font face="Symbol">&#207;</font> 
+  A &#125;</font></font> <br>
+  <br>
+  <img src="wenn/a-palm.gif" width="150" height="100" border="1"> <br>
+</P>
+<P><font face="MS Sans Serif" size="2" color="#000000">EX กำหนดให้ &#9;universe = &#123; 
+  10, -9 , -8, … ,8,9,10&#125;</font> </P>
+<P><font face="MS Sans Serif" size="2" color="#000000">&#9;&#9;&#9;A = &#123; 
+  1,2,3, … ,10&#125;</font> <br>
+  <font face="MS Sans Serif" size="2" color="#000000">&#9;&#9;B = &#123; 2,4,6,8,10&#125;</font> 
+  <br>
+  <font face="MS Sans Serif" size="2" color="#000000">C = &#123; -1,-3,-5,-7,-9,-10&#125;</font> 
+</P>
+<P><font face="MS Sans Serif" size="2" color="#000000">จงหา </font></P>
+
+
+
+<font face="MS Sans Serif" size="2" color="#000000">&#9;1. A'</font> 
+
+<br>
+  <textarea name="com" cols="50" class=input rows=1></textarea>
+  <font face="verdana" style="font-size: 8pt"><a onClick="com.value=' {0,-1,-2,...,-10}';" style="cursor:hand"><b>Answer</b></a> 
+  | <a onClick="com.value=''" style="cursor:hand"><b>Clear</b></a></font> <br><br>
+  
+
+<font face="MS Sans Serif" size="2" color="#000000">2. B'</font> 
+
+<br>
+  <textarea name="com2" cols="50" class=input rows=1></textarea>
+  <font face="verdana" style="font-size: 8pt"><a onClick="com2.value=' {-10,-9,-8,...,0,1,3,5,7,9}';" style="cursor:hand"><b>Answer</b></a> 
+  | <a onClick="com2.value=''" style="cursor:hand"><b>Clear</b></a></font> <br><br>
+
+
+<font face="MS Sans Serif" size="2" color="#000000">&#9;3. C'</font> 
+
+<br>
+  <textarea name="com3" cols="50" class=input rows=1></textarea>
+  <font face="verdana" style="font-size: 8pt"><a onClick="com3.value=' {-8,-6,-4,-2,0,1,2,...,10}';" style="cursor:hand"><b>Answer</b></a> 
+  | <a onClick="com3.value=''" style="cursor:hand"><b>Clear</b></a></font> <br><br>
+
+
+
+<P><font face="MS Sans Serif" size="2" color="#000000">&#9;<u>สมบัติของคอมพลิเมนต์</u></font></P>
+<P><font face="MS Sans Serif" size="2" color="#000000">ถ้า A และ B เป็นสับเซตของเอกภพสัมพัทธ์แล้ว</font></P>
+ 
+<p><FONT SIZE=5><font face="MS Sans Serif" size="2" color="#000000">1.<font color="#0066ff"> 
+  (A')'= A</font><br>
+  2. </font><font face="Symbol" size="2" color="#0066ff">&#198;</font><font face="MS Sans Serif" size="2" color="#0066ff">' 
+  = u</font><font face="MS Sans Serif" size="2" color="#000000"><br>
+  3. <font color="#0066ff">universe' = <font face="Symbol">&#198;</font></font><br>
+  4. <font color="#0066ff">A <font face="Symbol">&#199;</font> A' = <font face="Symbol">&#198;</font></font><font face="Symbol"><br>
+  </font>5. <font color="#0066ff">A <font face="Symbol">&#200;</font> A'= u</font><br>
+  6. <font color="#0066ff">( A <font face="Symbol">&#199;</font> B)'= A' <font face="Symbol">&#200;</font> 
+  B'</font><br>
+  7.<font color="#0066ff"> </font></font></font><font size="5" color="#0066ff"><font face="MS Sans Serif" size="2">( 
+  A <font face="Symbol">&#199;</font> B)'= A' <font face="Symbol">&#200;</font> 
+  B'<br>
+  </font></font><font face="MS Sans Serif" size="2" color="#000000">8. <font face="ms sans serif" color="#0066ff">A 
+  <font face="Symbol">&#204;</font> B ก็ต่อเมื่อ B' <font face="Symbol">&#204;</font> 
+  A'<br>
+  </font> 9.<font color="#0066ff"> </font><font face="MS Sans Serif" size="2" color="#0066ff">A 
+  <font face="Symbol">&#199;</font> B =<font face="Symbol"> &#198;</font></font> 
+  <font face="MS Sans Serif" size="2" color="#0066ff">&#9;ก็ต่อเมื่อ A <font face="Symbol">&#204;</font> 
+  B'<br>
+  <br>
+  <br>
+  </font></font> <FONT SIZE=5><FONT FACE="AngsanaUPC" SIZE=5> <font face="MS Sans Serif" size="2" color="#000000">4. 
+  <b>ผลต่าง</b> (Difference)</font></FONT> </font>
+<FONT SIZE=5> 
+<P><font face="MS Sans Serif" size="2" color="#000000">&#9;<u>นิยาม</u> กำหนดให้ 
+  A,B เป็นเซตชนิดใดๆ ผลต่างระหว่างเซต A และ B คือเซตที่ประกอบด้วยสมาชิกซึ่งอยู่ในเซต 
+  A แต่ไม่อยู่ในเซต B เขียนแทนด้วย A-B นั่นคือ</font></P>
+<FONT FACE="AngsanaUPC" SIZE=5> 
+<P><font face="MS Sans Serif" size="2" color="#0066ff">A-B = &#123; X | X <font face="Symbol">&#206;</font> 
+  A และ X <font face="Symbol">&#207;</font> B }</font><font face="MS Sans Serif" size="2" color="#000000"><br>
+  <br>
+  <img src="wenn/pic01.gif" width="150" height="100" border="1"> <br>
+  <br>
+  </font><font face="MS Sans Serif" size="2" color="#000000">A-B เมื่อ B <font face="Symbol">&#204;</font> 
+  A แล้ว A-B =<font face="Symbol"> &#198;</font> <br>
+  A=B A-B =<font face="Symbol"> &#198;</font> แล้ว A <font face="Symbol">&#204;</font> 
+  B</font> </P>
+</FONT> 
+<P><font face="MS Sans Serif" size="2" color="#000000">EX<br>
+  A = &#123; 1,2,3&#125;</font> <font face="MS Sans Serif" size="2" color="#000000">&#9;B 
+  = &#123; 2,4,6&#125;</font> <br>
+  <font size="2" face="MS Sans Serif" color="#000000">&#9;จงหา </font></P>
+<font face="MS Sans Serif" size="2" color="#000000">&#9;1. A-B </font> <br>
+<textarea name="dif" cols="50" class=input rows=1></textarea>
+<font face="verdana" style="font-size: 8pt"><a onClick="dif.value=' {1,3}';" style="cursor:hand"><b>Answer</b></a> 
+| <a onClick="dif.value=''" style="cursor:hand"><b>Clear</b></a></font> <br>
+<br>
+<font face="MS Sans Serif" size="2" color="#000000">&#9;2. B-A </font> <br>
+<textarea name="dif2" cols="50" class=input rows=1></textarea>
+<font face="verdana" style="font-size: 8pt"><a onClick="dif2.value=' {4,6}';" style="cursor:hand"><b>Answer</b></a> 
+| <a onClick="dif2.value=''" style="cursor:hand"><b>Clear</b></a></font> <br>
+<br>
+<P><font face="MS Sans Serif" size="2" color="#000000">&#9;<u>สมบัติของ Difference</u></font></P>
+</font> 
+<p><FONT SIZE=5><FONT FACE="AngsanaUPC" SIZE=5><font face="MS Sans Serif" size="2" color="#000000">1. 
+  <font color="#0066ff">A-A = <font face="Symbol">&#198;</font></font></font> 
+  </FONT></font><font size="2" face="MS Sans Serif"><font size="2" color="#000000"><br>  2. </font></font><FONT SIZE=2><font face="Symbol" size="2" color="#0066ff">&#198;</font><font face="MS Sans Serif" size="2" color="#0066ff"> 
+  -A = <font face="Symbol">&#198;</font></font> <br>
+  <font face="MS Sans Serif" size="2" color="#000000">3. <font color="#0066ff">A-<font face="Symbol">&#198;</font> 
+  = A</font><br>
+  4.<font color="#0066ff"> A' = universe - A</font><br>
+  5.<font color="#0066ff"> A-B <font face="Symbol">&#185;</font> B-A ยกเว้น A 
+  = B</font><br>
+  6. <font color="#0066ff">A-B = A <font face="Symbol">&#199;</font> B'</font><br>
+  7. <font color="#0066ff">A-B = A - (A <font face="Symbol">&#199;</font> B)</font><br>
+  8. </font><font face="MS Sans Serif" size="2" color="#0066ff">A - (B <font face="Symbol">&#199;</font> 
+  C) = (A-B) <font face="Symbol">&#200;</font> (A-C)</font><font face="MS Sans Serif" size="2" color="#000000"><br>
+  9. <font color="#0066ff">A - (B <font face="Symbol">&#200;</font> C) = (A-B) 
+  <font face="Symbol">&#199;</font> (A-C)&#9;</font><br>
+  10. <font color="#0066ff">( A-B) - C = A - (B <font face="Symbol">&#200;</font> 
+  C)</font><br>
+  11. <font color="#0066ff">A - (B-C) = (A-B) <font face="Symbol">&#200;</font> 
+  (A <font face="Symbol">&#199;</font> C)</font><br>
+  12. <font color="#0066ff">A <font face="Symbol">&#199;</font> (B-C) = (A <font face="Symbol">&#199;</font> 
+  B) - (A <font face="Symbol">&#199;</font> C)</font><br>
+  13. <font color="#0066ff">A <font face="Symbol">&#199;</font> (B-C) = (A <font face="Symbol">&#199;</font> 
+  B) - C</font><br>  14. <font color="#0066ff">A- (B-C) = (B'-A') <font face="Symbol">&#200;</font> 
+  (A </font></font><font size="2" color="#0066ff"><font face="MS Sans Serif" size="2"><font face="Symbol">&#199;</font></font></font> 
+  <font face="MS Sans Serif" size="2" color="#0066ff">C)</font><font face="MS Sans Serif" size="2" color="#000000"><br>
+  15. <font color="#0066ff">A-B = A ก็ต่อเมื่อA <font face="Symbol">&#199;</font> 
+  B = <font face="Symbol">&#198;</font></font><font face="Symbol"><br>
+  </font>16. <font color="#0066ff">A-B = <font face="Symbol">&#198;</font> ก็ต่อเมื่อ 
+  A <font face="Symbol">&#204;</font> B</font><br>
+  17.<font color="#0066ff"> A-B = B'- A'</font><br>
+  18. <font color="#0066ff">(A-B) - C = (A-C) - B</font></font></font></p>
+<FONT SIZE=5> 
+
+<P><font face="MS Sans Serif" size="2" color="#000000">EX พิสูจน์ (A <font face="Symbol">&#199;</font></font> 
+  <font face="MS Sans Serif" size="2" color="#000000"><U>B <font face="Symbol">&#199;</font> 
+  C</U>) <font face="Symbol">&#200;</font> (A' <font face="Symbol">&#199;</font></font> 
+  <font face="MS Sans Serif" size="2" color="#000000"><U>B <font face="Symbol">&#199;</font> 
+  C</U>) <font face="Symbol">&#200;</font> (B'<font face="Symbol"> &#200;</font> 
+  C') = universe</font></P>
+
+<font face="ms sans serif" size=2><u>หมายเหตุ</u> ขอแทน เครื่องหมาย <font face="Symbol">&#199;</font>  ด้วย ^</font><br>
+  <textarea name="dif3" cols="50" class=input rows=5></textarea>
+  <font face="verdana" style="font-size: 8pt"><a onClick="dif3.value=' universe = [A U A\'^B^C] U (B^C)\'\n universe = (universe U B^C) U (B^C)\'\n universe = (B^C) U (B^C)\' \n universe = universe \n true';" style="cursor:hand"><b>Answer</b></a> 
+  | <a onClick="dif3.value=''" style="cursor:hand"><b>Clear</b></a></font> <br><br>
+
+
+
+
+  </font><p></P>
+<P><font face="MS Sans Serif" size="2" color="#000000">&#9;5. <b>เอกซ์คลูซีฟยูเนียน 
+  </b>(Exclusive Union)</font></P>
+<P><font face="MS Sans Serif" size="2" color="#000000">&#9;<u>นิยาม</u>&#9;กำหนดให้ 
+  และ เป็น สับเซตของเอกภพสัมพัทธ์</font></P>
+<P><font face="MS Sans Serif" size="2" color="#000000">&#9;&#9;เอกคลูซีฟยูเนียนของ 
+  และ คือ เซต <font color="#0066ff">(A-B) <font face="Symbol">&#200;</font> (B-A)</font></font></P>
+<P><font face="MS Sans Serif" size="2" color="#000000">&#9;&#9;กล่าวคือ <font color="#0066ff">A 
+  <font face="Symbol"><u>&#200;</u></font> B = (A-B) <font face="Symbol">&#200;</font> 
+  (B-A)</font> นั่นคือ</font></P>
+<P><font face="MS Sans Serif" size="2" color="#000000">&#9;&#9;<font color="#0066ff">A 
+  <font face="Symbol"><u>&#200;</u></font> B = &#123; X <font face="Symbol">&#206;</font> 
+  universe | X <font face="Symbol">&#206;</font> A หรือ X <font face="Symbol">&#206;</font> 
+  B และ X <font face="Symbol">&#207;</font> A <font face="Symbol">&#199;</font> 
+  B&#125;</font></font> <br>
+  <br>
+  <img src="wenn/exclusive1.gif" width="150" height="100" border="1"> <br>
+  <br>
+  <font face="MS Sans Serif" size="5" color="#000000"><u><font size="2">สมบัติของ 
+  Exclusive Union</font></u></font><br>
+</P>
+<P><font face="MS Sans Serif" size="2" color="#000000">&#9;1. <font color="#0066ff">A 
+  <font face="Symbol"><u>&#200;</u></font> B <font face="Symbol">&#204;</font> 
+  A <font face="Symbol">&#200;</font> B และ A <font face="Symbol"><u>&#200;</u></font> 
+  B <font face="Symbol">&#185;</font> A <font face="Symbol">&#200;</font> B &#9;</font><br>
+  <br>
+  2. <font color="#0066ff">A <font face="Symbol"><u>&#200;</u></font> B = A <font face="Symbol">&#200;</font> 
+  B เมื่อ A <font face="Symbol">&#199;</font> B = <font face="Symbol">&#198;<br>
+  <img src="wenn/exclusive2.gif" width="150" height="100" border="1"> <br>
+  </font></font><br>
+  3. </font><font face="MS Sans Serif" size="2" color="#0066ff">A <font face="Symbol"><u>&#200;</u></font> 
+  B = <font face="Symbol">&#198;</font> เมื่อ A = B&#9;&#9;&#9;<br>
+  <img src="wenn/exclusive3.gif" width="150" height="100" border="1"><br>
+  <br>
+  <font color="#000000">4. </font>A <font face="Symbol"><u>&#200;</u></font> B 
+  = B-A เมื่อ A <font face="Symbol">&#204;</font> B<br>
+  <img src="wenn/exclusive4.gif" width="150" height="100" border="1"> </font></P>
+ 
+</BODY>
+</HTML>
